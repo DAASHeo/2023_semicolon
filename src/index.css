@@ -1,0 +1,36 @@
+/*font-face 정의*/
+@font-face {
+  font-family: 'lineregular';
+  src: url('./fonts/LINESeedKR-Rg.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'linebold';
+  src: url('./fonts/LINESeedKR-Bd.woff2') format('woff2');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'linethin';
+  src: url('./fonts/LINESeedKR-Th.woff2') format('woff2');
+  font-weight: 100; 
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'galvji';
+  src: url('./fonts/galvji-oblique.ttf') format('truetype');
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'futura';
+  src: url('./fonts/Futura\ Medium.otf') format('opentype');
+  font-weight: 100; 
+  font-style: normal;
+}
+
