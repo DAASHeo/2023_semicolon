@@ -1,16 +1,14 @@
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { Reset } from 'styled-reset';
-import Main from './pages/Main';
+import Main from "./pages/MainPage.js"
 
 function App() {
     return (
         <BrowserRouter>
-            <>
-                <Reset />
-                <Routes>
-                    <Route exact path="/" element={<Main />} />
-                </Routes>
-            </>
+            <Reset />
+            <Routes>
+                <Route path="/" element={<Main />} />
+            </Routes>
         </BrowserRouter>
     );
 }
