@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react'
 import styled from 'styled-components';
 import marker from '../images/marker.png';
+import home from '../images/home.png';
+import insta from '../images/instagram.png';
 const {kakao} = window;
 
 function Invitation() {
@@ -76,6 +78,20 @@ const handleDraggableChange = (e) => {
                     </Detail>
                 </MapContainer>
             </PlaceInfo>
+            <About>
+                <Infotitle>ABOUT US</Infotitle>
+                <Atext>IT미디어공학전공은 컴퓨터, 스마트폰 및 다양한 사물인터넷 기기를 위한 프로그래밍 및 데이터의 처리, 활용 등을 위한 첨단 기술 분야를 다룹니다. 또한 영상, 게임 콘텐츠, 사용자 인터페이스/사용자 경험 등 창조적인 미디어 기술 분야를 다룸으로써, 첨단 IT 및 미디어 기술에 대한 전반적 이해를 토대로 다원적 융합형 인재 양성을 통해 새로운 융합 사회로의 진보와 인류 사회의 발전에 기여함을 목표로 하고 있습니다.</Atext>
+                <LinkBox>
+                    <LInner>
+                        <LIcon src={home}/>
+                        <Ltext>학과<br/>홈페이지</Ltext>
+                    </LInner>
+                    <LInner>
+                        <LIcon src={insta}/>
+                        <Ltext>공식<br/>인스타그램</Ltext>
+                    </LInner>
+                </LinkBox>
+            </About>
         </Info>
     </Div>
     
@@ -165,7 +181,7 @@ const TimeInfo = styled.div`
 const Infotitle = styled.div`
     font-family: pretendard;
     font-weight: 400;
-    font-size: 1.15rem;
+    font-size: 1.3rem;
 
 `;
 const TimeBox = styled.div`
@@ -214,5 +230,36 @@ const Line = styled.div`
     background: #79C9D1;
     width: 20%;
     height: 2px;
+`;
+const About = styled.div`
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+`;
+const Atext = styled.div`
+    color: #8A8A8A;
+    margin-top: 28px;
+    font-size:0.9rem;
+    line-height: 15px;
+    margin-bottom: 49px;
+`;
+const LinkBox = styled.div`
+    display: flex;
+    flex-direction: row;
+`;
+const LInner = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+`;
+const LIcon = styled.img`
+    margin-bottom: 8px;
+`;
+const Ltext = styled.div`
+    text-align: center;
+    font-size: 9px;
+    color: #8A8A8A;
+    line-height: 13px;
 `;
 export default Invitation
