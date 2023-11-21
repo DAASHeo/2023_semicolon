@@ -7,18 +7,18 @@ import Footer from '../components/FooterSection'
 import upicon from '../images/up_icon.png'
 
 function MainPage() {
-
+  const topRef = useRef(null);
   const scrollToTop = () => {
-    window.scrollTo({
-      top: 0,
-      behavior: 'smooth', // 부드러운 스크롤 효과를 위해 'smooth' 옵션을 사용
+    topRef.current.scrollIntoView({
+      behavior: 'smooth',
+      block: 'start',
     });
-    console.log("click");
   };
 
 
   return (
     <Div >
+      <div ref={topRef}></div>
         <Poster />
         <Invitation/>
         <Projects/>
@@ -35,13 +35,12 @@ const Div = styled.div`
 display: flex;
 flex-direction: column;
     background-color: white;
-  @media (min-width: 768px) {
+  @media (min-width: 430px) {
     margin: 0 auto;
-    width: 375px;
+    width: 430px;
   }
   height: 100%;
-  overflow-y: scroll;
-  overflow-x: hidden;
+  width: 100vw;
 `;
 const UpBtn = styled.div`
     display : flex;
