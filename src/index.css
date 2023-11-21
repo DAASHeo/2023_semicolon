@@ -35,6 +35,11 @@
 }
 
 body{
-  background-color: rgb(224, 224, 224);
+  background-color: #f2f5f7;
+  height: 100%;
+}
+
+#root{
+  height: 100%;
 
 }

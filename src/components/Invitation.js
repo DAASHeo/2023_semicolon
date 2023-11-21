@@ -11,11 +11,11 @@ function Invitation() {
     const options = {
         center: new kakao.maps.LatLng(37.65533404021884, 127.0480100466395),
         level:2,
-        draggable: isDraggable
+        draggable: false
     };
     const map = new kakao.maps.Map(container, options);
     const markerPosition  = new kakao.maps.LatLng(37.65533404021884, 127.0480100466395); 
-    var iwContent = '<div style="padding:5px 10px; margin:0 auto;">서울창업허브 창동</div>', 
+    var iwContent = '<div style="padding:5px 10px; margin:0 auto; border-radius:5px;">서울창업허브 창동</div>', 
     iwPosition = new kakao.maps.LatLng(37.65553404021884, 127.0480100466395), 
     iwRemoveable = false;
 
@@ -26,10 +26,6 @@ var infowindow = new kakao.maps.InfoWindow({
     content : iwContent,
     removable : iwRemoveable
 });
-    kakao.maps.event.addListener(map, 'tilesloaded', () => {
-        map.setDraggable(isDraggable);
-    });
-
     var marker = new kakao.maps.Marker({
         position: markerPosition
     });
@@ -46,30 +42,7 @@ const handleDraggableChange = (e) => {
   return (
     <Div>
         <MapContainer>
-    <RadioContainer>
-        <label>지도 이동</label>
-                <label>
-                    <input 
-                        type="radio" 
-                        name="draggable" 
-                        value="true" 
-                        checked={isDraggable === true}
-                        onChange={handleDraggableChange}
-                    />
-                    켜기
-                </label>
-                <label>
-                    <input 
-                        type="radio" 
-                        name="draggable" 
-                        value="false"
-                        checked={isDraggable === false}
-                        onChange={handleDraggableChange}
-                    />
-                    끄기
-                </label>
-            </RadioContainer>
-        <Map id="map"></Map>
+                <Map id="map"></Map>
         <Detail>
             <Micon src={marker}/>
             <Maddress>서울 도봉구 마들로13길 84</Maddress>
@@ -80,10 +53,15 @@ const handleDraggableChange = (e) => {
   )
 }
 
-const Div = styled.div``;
+const Div = styled.div`
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 0px 36px;
+`;
 
 const MapContainer = styled.div`
-    width: 100vw;
+    width: 100%;
     margin: 25px 0px;
 `;
 

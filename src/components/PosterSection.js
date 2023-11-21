@@ -12,35 +12,45 @@ import major from '../images/poster/major.png'
 
 function PosterSection() {
   return (
-    <Div>
-        <Wrap1>
-            <Maintitle src={main}/>
-            <SubWrap1>
-                <Subtitle src={sub}/>
-                <Subimg src={semicolon_g}/>
-            </SubWrap1>
-        </Wrap1>
-        <Wrap2>
-            <DInfo>
-                <DateInfo src={date}/>
-                <PlaceInfo src={place}/>
-            </DInfo>
-            <DInfo>
-                <Sinfo1 src={sinfo}/>
-                <Sinfo2 src={major}/>
-            </DInfo>
-            <Dcolon src={transcolon}/>
-        </Wrap2>
-    </Div>
+    <PDiv>
+        <Div1>
+            <Wrap1>
+                <Maintitle src={main}/>
+                <SubWrap1>
+                    <Subtitle src={sub}/>
+                    <Subimg src={semicolon_g}/>
+                </SubWrap1>
+            </Wrap1>
+            <Wrap2>
+                <DInfo1>
+                    <DateInfo src={date}/>
+                    <PlaceInfo src={place}/>
+                </DInfo1>
+                <DInfo2>
+                    <Sinfo1 src={major}/>
+                    <Sinfo2 src={sinfo}/>
+                </DInfo2>
+                <Dcolon src={transcolon}/>
+            </Wrap2>
+        </Div1>
+        <Div2>
+            <Line/>
+        </Div2>
+    </PDiv>
   )
 }
-
-const Div = styled.div`
+const PDiv =styled.div`
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(#7FC1A1, white);
+    height: 100%;
+`;
+const Div1 = styled.div`
 background-image: url(${maincolon}); // 배경 이미지 설정
-  background-size: cover; // 배경 이미지가 Div를 꽉 채우도록 설정
+  background-size: 244px 561px; // 배경 이미지가 Div를 꽉 채우도록 설정
   background-position: center; // 배경 이미지를 Div의 중앙에 위치하도록 설정
   background-repeat: no-repeat; // 배경 이미지가 반복되지 않도록 설정
-  height: 100vh; // 예시로 설정한 높이, 실제 필요에 따라 조절해야 함
+  height: 100%;
 `;
 const Wrap1 = styled.div`
     display: flex;
@@ -52,7 +62,10 @@ const Wrap1 = styled.div`
 const Wrap2 = styled.div`
     display: flex;
     flex-direction: row;
-    width: 319px;
+    justify-content: space-between;
+    padding: 0px 29px 0px 27px;
+    margin-top: 49px;
+    margin-bottom: 287px;
 `;
 const Maintitle = styled.img`
 width: 8.625rem;
@@ -69,34 +82,43 @@ width: 2.3125rem;
 const Subimg = styled.img`
     width: 0.4375rem;
 `;
-const DInfo = styled.div`
+const DInfo1 = styled.div`
     display: flex;
-    flex-direction: row;
-    width: 319px;
+    flex-direction: column;
+    width: 44px;
 `;
 const DateInfo = styled.img`
-    display: flex;
-    flex-direction: row;
-    width: 319px;
+    margin-bottom: 13px;
 `;
 const PlaceInfo = styled.img`
+    width: 100%;
+`;
+const DInfo2 = styled.div`
     display: flex;
-    flex-direction: row;
-    width: 319px;
+    flex-direction: column;
+    width: 69px;
 `;
 const Sinfo1 = styled.img`
-    display: flex;
-    flex-direction: row;
-    width: 319px;
+    margin-bottom: 36px;
 `;
 const Sinfo2 = styled.img`
-    display: flex;
-    flex-direction: row;
-    width: 319px;
+width: 40px;
 `;
 const Dcolon = styled.img`
-    display: flex;
-    flex-direction: row;
-    width: 319px;
+    width: 21px;
+    height: 95px;
 `;
+
+const Div2 =styled.div `
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+`;
+const Line = styled.div`
+    width: 2px;
+    height: 136px;
+    background-color: #79C9D1;
+    margin-top: 62px;
+    margin-bottom: 45px;
+`
 export default PosterSection
