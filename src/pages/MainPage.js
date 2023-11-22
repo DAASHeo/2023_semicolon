@@ -1,10 +1,9 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useRef } from "react";
 import styled from "styled-components";
 import Poster from "../components/PosterSection";
 import Invitation from "../components/Invitation";
 import Projects from "../components/Projects";
 import Footer from "../components/FooterSection";
-import shareicon from "../images/share.png";
 import upicon from "../images/up_icon.png";
 
 function MainPage() {
@@ -24,12 +23,8 @@ function MainPage() {
       <Projects />
       <Footer />
       <BtnSection>
-        {/* <ShareBtn>
-          <img src={shareicon} />
-          <Btntext1>공유</Btntext1>
-        </ShareBtn> */}
         <UpBtn onClick={scrollToTop}>
-          <img src={upicon} />
+          <img src={upicon} alt="위로 이동 아이콘" />
           <Btntext>맨위로</Btntext>
         </UpBtn>
       </BtnSection>
@@ -70,18 +65,4 @@ const BtnSection = styled.div`
   bottom: 20px; // 화면 하단에서 20px 떨어진 위치
   right: 20px; // 화면 오른쪽에서 20px 떨어진 위치
 `;
-const ShareBtn = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 65px;
-  height: 65px;
-  background-color: white;
-  border-radius: 50%;
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-  justify-content: center;
-  margin-bottom: 12px;
-  gap: 5px;
-`;
-const Btntext1 = styled.div``;
 export default MainPage;

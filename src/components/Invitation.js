@@ -1,5 +1,4 @@
-import React, { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import React, { useEffect } from "react";
 import styled from "styled-components";
 import marker from "../images/marker.png";
 import home from "../images/home.png";
@@ -10,8 +9,6 @@ import "aos/dist/aos.css";
 const { kakao } = window;
 
 function Invitation() {
-  const [isDraggable, setIsDraggable] = useState(true);
-
   /* 스크롤 애니메이션*/
   useEffect(() => {
     AOS.init({ duration: 300 });
@@ -52,7 +49,8 @@ function Invitation() {
     });
 
     marker.setMap(map);
-  }, [isDraggable]);
+    infowindow.setMap(map);
+  });
 
   return (
     <Div>
