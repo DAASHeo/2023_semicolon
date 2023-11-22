@@ -1,9 +1,34 @@
-import React from 'react'
+import React from "react";
+import styled from "styled-components";
+import logo from "../images/footerlogo.png";
 
 function FooterSection() {
   return (
-    <div>FooterSection</div>
-  )
+    <Div>
+      <DTile src={logo} />
+      <DName>Developed by Heo Eun</DName>
+    </Div>
+  );
 }
 
-export default FooterSection
+const Div = styled.div`
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(white, #7fc1a1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+`;
+const DTile = styled.img`
+  height: 1.2rem;
+`;
+const DName = styled.div`
+  font-family: Noto Sans KR;
+  font-weight: 200;
+  color: whitesmoke;
+`;
+
+export default FooterSection;

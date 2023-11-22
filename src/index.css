@@ -1,77 +1,78 @@
 /*font-face 정의*/
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;200;300;400;500;600;700&display=swap");
 @font-face {
-  font-family: 'lineregular';
-  src: url('./fonts/LINESeedKR-Rg.woff2') format('woff2');
+  font-family: "lineregular";
+  src: url("./fonts/LINESeedKR-Rg.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'linebold';
-  src: url('./fonts/LINESeedKR-Bd.woff2') format('woff2');
+  font-family: "linebold";
+  src: url("./fonts/LINESeedKR-Bd.woff2") format("woff2");
   font-weight: bold;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'linethin';
-  src: url('./fonts/LINESeedKR-Th.woff2') format('woff2');
-  font-weight: 100; 
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'galvji';
-  src: url('./fonts/galvji-oblique.ttf') format('truetype');
+  font-family: "linethin";
+  src: url("./fonts/LINESeedKR-Th.woff2") format("woff2");
   font-weight: 100;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'futura';
-  src: url('./fonts/Futura\ Medium.otf') format('opentype');
-  font-weight: 100; 
+  font-family: "galvji";
+  src: url("./fonts/galvji-oblique.ttf") format("truetype");
+  font-weight: 100;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'pretendard';
-  src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Bold.woff') format('woff');
+  font-family: "futura";
+  src: url("./fonts/Futura\ Medium.otf") format("opentype");
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "pretendard";
+  src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Bold.woff")
+    format("woff");
   font-weight: 500;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'pretendard';
-  src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+  font-family: "pretendard";
+  src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff")
+    format("woff");
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'pretendard';
-  src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Light.woff') format('woff');
+  font-family: "pretendard";
+  src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Light.woff")
+    format("woff");
   font-weight: 300;
   font-style: normal;
 }
 @font-face {
-  font-family: 'pretendard';
-  src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-ExtraLight.woff') format('woff');
+  font-family: "pretendard";
+  src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-ExtraLight.woff")
+    format("woff");
   font-weight: 200;
   font-style: normal;
 }
 
-
 /*font-face 정의*/
 
-body{
+body {
   background-color: #f2f5f7;
   height: 100%;
 }
 
-#root{
+#root {
   height: 100%;
-
 }
