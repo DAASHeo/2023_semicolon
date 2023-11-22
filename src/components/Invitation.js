@@ -1,8 +1,8 @@
 import React, { useEffect } from "react";
 import styled from "styled-components";
 import marker from "../images/marker.png";
-import home from "../images/home.png";
-import insta from "../images/instagram.png";
+import home from "../images/test/home.png";
+import insta from "../images/test/insta.png";
 import colon from "../images/colon_2.png";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -14,7 +14,7 @@ function Invitation() {
     AOS.init({ duration: 300 });
   });
 
-  /* 지도 */
+  //   /* 지도 */
   useEffect(() => {
     const container = document.getElementById("map");
     const options = {
@@ -60,7 +60,7 @@ function Invitation() {
           졸업은 학부 생활의 마침표인 동시에
           <br /> 대학 그 이후의 세상으로 나아감의 의미를 가지고 있습니다.
           <br /> 열정을 다해 달려온 학부생활의 마침표를 찍고,
-          <br /> 문을 열었을 때 그 앞에 무엇이 펼쳐져있을지는 알 수 없습니다.
+          <br /> 문을 열었을 때 그 앞에 무엇이 펼쳐져 있을지는 알 수 없습니다.
           <br />
           <br /> 다만, 알 수 없는 그 너머의 공간이
           <br /> 우리 모두가 꿈꾸던 찬란한 세상이길 바라며,
@@ -303,7 +303,7 @@ const Atext = styled.div`
 const LinkBox = styled.div`
   display: flex;
   flex-direction: row;
-  width: 50%;
+  width: 60%;
   justify-content: space-between;
   margin-bottom: 65px;
 `;
@@ -318,11 +318,11 @@ const LIcon = styled.img`
 `;
 const Ltext = styled.div`
   text-align: center;
-  font-size: 9px;
+  font-size: 11px;
   color: #8a8a8a;
   line-height: 13px;
-  font-family: Noto Sans KR;
-  font-weight: 200;
+  font-family: Noto Sans K;
+  font-weight: 400;
 `;
 
 const Mclick = styled.div`
