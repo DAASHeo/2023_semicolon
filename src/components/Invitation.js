@@ -77,17 +77,21 @@ function Invitation() {
         <TimeInfo>
           <Infotitle>전시 일정</Infotitle>
           <TimeBox data-aos="fade-up">
-            <TDate>2023.11.29</TDate>
+            <TDate>2023.11.29 수요일</TDate>
             <TTime>10:00 - 17:00</TTime>
           </TimeBox>
           <TimeBox data-aos="fade-up">
-            <TDate>2023.11.30</TDate>
+            <TDate>2023.11.30 목요일</TDate>
             <TTime>10:00 - 17:00</TTime>
           </TimeBox>
           <TimeBox data-aos="fade-up">
-            <TDate>2023.12.01</TDate>
+            <TDate>2023.12.01 금요일</TDate>
             <TTime>10:00 - 14:00</TTime>
           </TimeBox>
+          <Caution data-aos="fade-up">
+            <Caution1>오프닝 행사는 전시 1일차인 11월 29일 (수) 오전 10시에 진행될 예정입니다.</Caution1>
+            <Caution2>*단, 행사 시작 시간은 현장 상황에 따라 변경될 수 있음을 미리 안내 드립니다.</Caution2>
+          </Caution>
         </TimeInfo>
         <PlaceInfo>
           <Infotitle>오시는 길</Infotitle>
@@ -98,6 +102,7 @@ function Invitation() {
               <Micon src={marker} />
               <Maddress>서울 도봉구 마들로13길 84</Maddress>
             </Detail>
+            <Caution2>주차장 이용이 혼잡할 수 있으니 가급적 대중교통 이용 부탁드립니다.</Caution2>
           </MapContainer>
         </PlaceInfo>
         <About>
@@ -224,13 +229,14 @@ const Info = styled.div`
   width: 100%;
 `;
 const TimeInfo = styled.div`
+margin-top: 20px;
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 255px;
+  height: 400px;
   gap: 25px;
-  margin-bottom: 50px;
+  margin-bottom: 60px;
 `;
 const Infotitle = styled.div`
   font-family: pretendard;
@@ -331,5 +337,25 @@ const Mclick = styled.div`
   color: gray;
   margin-bottom: 5px;
 `;
+
+const Caution  = styled.div`
+    display: flex;
+    flex-direction:column;
+    width: 100%;
+    gap: 5px;
+`;
+const Caution1  = styled.div`
+font-family: Noto Sans KR;
+font-size: 12px;
+    line-height: 18px;
+`;
+const Caution2  = styled.div`
+font-family: Noto Sans KR;
+    color: gray;
+    font-size: 12px;
+    line-height: 18px;
+`;
+
+
 
 export default Invitation;

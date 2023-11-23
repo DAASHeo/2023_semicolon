@@ -6,13 +6,13 @@ function FooterSection() {
   return (
     <Div>
       <DTile src={logo} />
-      <DName>Developed by Heo Eun</DName>
+      <DName>&lt; Developed by Heo Eun / &gt;</DName>
     </Div>
   );
 }
 
 const Div = styled.div`
-  height: 250px;
+  height: 300px;
   display: flex;
   flex-direction: column;
   background: linear-gradient(white, #7fc1a1);
@@ -28,7 +28,8 @@ const DTile = styled.img`
 const DName = styled.div`
   font-family: Noto Sans KR;
   font-weight: 200;
-  color: whitesmoke;
+  color: gray;
+  font-size: 15px;
 `;
 
 export default FooterSection;
