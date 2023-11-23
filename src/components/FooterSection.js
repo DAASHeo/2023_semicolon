@@ -26,10 +26,10 @@ const DTile = styled.img`
   height: 1.2rem;
 `;
 const DName = styled.div`
-  font-family: Noto Sans KR;
-  font-weight: 200;
-  color: gray;
-  font-size: 15px;
+    font-family: "Noto Sans KR";
+    font-weight: 300;
+    color: gray;
+    font-size: 11px;
 `;
 
 export default FooterSection;
