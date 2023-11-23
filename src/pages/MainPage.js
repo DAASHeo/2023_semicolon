@@ -55,7 +55,10 @@ const UpBtn = styled.div`
   justify-content: center;
 `;
 const Btntext = styled.div`
-  margin-bottom: 10px;
+    font-family: Noto Sans KR;
+    margin-bottom: 10px;
+    font-size: 13px;
+    font-weight: 700;
 `;
 const BtnSection = styled.div`
   display: flex;
