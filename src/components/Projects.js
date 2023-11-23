@@ -5,12 +5,12 @@ import team2 from "../images/projects/덕공이산.png";
 import team3 from "../images/projects/덕썸니아.png";
 import team4 from "../images/projects/덕진스.png";
 import team5 from "../images/projects/아람.png";
-import team6 from "../images/projects/지켜줄개.png";
+import team6 from "../images/projects/지켜줄개.jpg";
 import team7 from "../images/projects/집탐험대.png";
 import team8 from "../images/projects/천원은행복.png";
 import team9 from "../images/projects/코딩하는세포들.png";
 import team10 from "../images/projects/하이파이브Ent.png";
-import team11 from "../images/projects/A202.png";
+import team11 from "../images/projects/A2O2.png";
 import team12 from "../images/projects/Freaks.png";
 import team13 from "../images/projects/Meme.png";
 
@@ -40,7 +40,7 @@ function Projects() {
           <PImg src={team11} />
           <PInfo>
             <PTitle>비마커 기반 실내 측위기술을 활용한 AR도슨트</PTitle>
-            <PTeam>A202</PTeam>
+            <PTeam>A2O2</PTeam>
           </PInfo>
           <PMem>김윤아 | 신지현 | 오유선 | 이예림</PMem>
           <PText>
