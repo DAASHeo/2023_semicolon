@@ -236,7 +236,7 @@ margin-top: 20px;
   align-items: center;
   height: 400px;
   gap: 25px;
-  margin-bottom: 60px;
+  margin-bottom: 40px;
 `;
 const Infotitle = styled.div`
   font-family: pretendard;

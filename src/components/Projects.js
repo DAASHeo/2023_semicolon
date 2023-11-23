@@ -200,7 +200,7 @@ const TitleBox = styled.div`
   display: flex;
   flex-direction: row;
   align-items: center;
-  margin-bottom: 35px;
+  margin-bottom: 45px;
   width: 100%;
   justify-content: space-between;
 `;
